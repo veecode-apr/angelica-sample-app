@@ -1,0 +1,8 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: angelica-sample-app-location
+  description: Location to import all angelica-sample-app catalog components
+spec:
+  targets:
+    - ./.platform/*.yaml

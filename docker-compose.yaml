@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  angelica-sample-app:
+    container_name: angelica-sample-app 
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"

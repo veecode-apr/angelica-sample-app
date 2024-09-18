@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: angelica-sample-app
+  annotations:
+    github.com/project-slug: veecode-apr/angelica-sample-app
+    backstage.io/techdocs-ref: dir:..
+    backstage.io/kubernetes-id: "angelica-sample-app"
+    vault.io/secrets-path: "angelica-sample-app"
+    grafana/dashboard-selector: "angelica-sample-app"
+    grafana/alert-label-selector: "alertname=angelica-sample-app"
+    argocd/proxy-url: '/argocd/api'
+    argocd/app-name: "angelica-sample-app"
+    kong-manager/service-name: veecode-apr.angelica-sample-app-service-0.8080
+    kong-manager/instance: /kong-manager/api
+spec:
+  type: service
+  lifecycle: experimental
+  owner: "group:default/admin"

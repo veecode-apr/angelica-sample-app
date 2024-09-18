@@ -1,0 +1,8 @@
+site_name: "angelica-sample-app"
+site_description: 
+
+nav:
+  - Introduction: index.md
+
+plugins:
+  - techdocs-core
